@@ -1,33 +1,51 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Shaheer Siddiqui | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>👋 Hi, I’m Shaheer Siddiqui</h1>
-    <p>Aspiring Full Stack Web Developer & UI/UX Designer</p>
+  <header class="hero">
+    <div class="overlay"></div>
+    <img src="profile.jpg" alt="Shaheer Siddiqui" class="profile-pic" />
+    <h1>Shaheer Siddiqui</h1>
+    <p>Aspiring Full Stack Developer & UI/UX Designer</p>
+
+    <div class="socials">
+      <a href="https://github.com/zain-dotcom" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/shaheer-siddiqui-90b286226" target="_blank">LinkedIn</a>
+      <a href="mailto:siddiquizain169@gmail.com">Email</a>
+    </div>
   </header>
 
-  <section class="projects" id="projects">
-    <h2>🧩 Projects</h2>
-    <div class="card">
-      <img src="https://via.placeholder.com/600x300" alt="To-Do App">
-      <h3>To-Do List App</h3>
-      <p>Simple and elegant task manager with localStorage.</p>
-      <a href="https://zain-dotcom.github.io/todo-app-shaheer/" class="btn" target="_blank">View Project</a>
+  <section class="projects">
+    <h2>🚀 Projects</h2>
+    <div class="project-grid">
+      <div class="card fade-in">
+        <h3>To-Do List App</h3>
+        <p>Manage tasks efficiently with this simple to-do list.</p>
+        <a href="https://zain-dotcom.github.io/todo-app-shaheer/" target="_blank">View Project</a>
+      </div>
+      <div class="card fade-in">
+        <h3>Weather App</h3>
+        <p>Search for real-time weather info using an API.</p>
+        <a href="#">View Project</a>
+      </div>
+      <div class="card fade-in">
+        <h3>Portfolio Website</h3>
+        <p>This personal portfolio site built using HTML, CSS & JS.</p>
+        <a href="https://zain-dotcom.github.io/html-portfolio/" target="_blank">View Project</a>
+      </div>
     </div>
   </section>
 
   <section class="contact fade-in" id="contact">
-    <div class="contact-wrapper">
-      <h2>📬 Contact Me</h2>
-      <p>If you’d like to connect or collaborate, feel free to reach out!</p>
-      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=siddiquizain169@gmail.com" class="btn" target="_blank">📧 Send Email</a>
-    </div>
+    <h2>📬 Contact Me</h2>
+    <p>If you’d like to connect or collaborate, feel free to reach out!</p>
+    <a href="mailto:siddiquizain169@gmail.com" class="email-btn">Send Email</a>
   </section>
-
-  <script src="script.js"></script>
 </body>
 </html>
+
