@@ -1,71 +1,85 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Shaheer Siddiqui - Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shaheer Siddiqui | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-content">
-      <img src="zain.jpg" alt="Shaheer's Photo" class="profile-pic"/>
-      <h1 class="fade-in">Hi, I'm <span class="highlight">Shaheer Siddiqui</span></h1>
-      <p class="fade-in delay-1">Full Stack Web Developer & UI/UX Designer</p>
-      <div class="social-links fade-in delay-2">
-        <a href="https://zain-dotcom.github.io/html-portfolio/" target="_blank">🌐 GitHub</a>
-        <a href="https://www.linkedin.com/in/shaheer-siddiqui-90b286226" target="_blank">💼 LinkedIn</a>
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=siddiquizain169@gmail.com" target="_blank">📧 Email</a>
-      </div>
+  <header class="hero" id="home">
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="overlay"></div>
+    <img src="profile.jpg" alt="Shaheer Siddiqui" class="profile-pic" />
+    <h1>Shaheer Siddiqui</h1>
+    <p>Aspiring Full Stack Developer & UI/UX Designer</p>
+
+    <div class="socials">
+      <a href="https://github.com/zain-dotcom" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/shaheer-siddiqui-90b286226" target="_blank">LinkedIn</a>
+      <a href="mailto:siddiquizain169@gmail.com">Email</a>
     </div>
   </header>
 
-  <section class="projects">
-    <h2 class="section-title">🚀 Projects</h2>
-
-    <div class="card scroll-fade">
-      <img src="https://via.placeholder.com/600x300" alt="To-Do App">
-      <h3>To-Do App</h3>
-      <p>A clean and simple task manager built using JavaScript.</p>
-      <a href="#" class="btn">View Project</a>
+  <section class="projects" id="projects">
+    <h2>🚀 Projects</h2>
+    <div class="project-grid">
+      <div class="card">
+        <h3>To-Do List App</h3>
+        <p>Manage tasks efficiently with this simple to-do list.</p>
+        <a href="https://zain-dotcom.github.io/todo-app-shaheer/" target="_blank">View Project</a>
+      </div>
+      <div class="card">
+        <h3>Weather App</h3>
+        <p>Search for real-time weather info using an API.</p>
+        <a href="#">View Project</a>
+      </div>
+      <div class="card">
+        <h3>Portfolio Website</h3>
+        <p>This personal portfolio site built using HTML, CSS & JS.</p>
+        <a href="https://zain-dotcom.github.io/html-portfolio/" target="_blank">View Project</a>
+      </div>
     </div>
+  </section>
 
-    <div class="card scroll-fade">
-      <img src="https://via.placeholder.com/600x300" alt="Weather App">
-      <h3>Weather App</h3>
-      <p>Get real-time weather data using OpenWeather API and responsive UI.</p>
-      <a href="#" class="btn">View Project</a>
+  <section class="resume" id="resume">
+    <h2>📄 Resume</h2>
+    <div class="resume-box">
+      <p><strong>Shaheer Siddiqui</strong><br>Delhi, India<br>
+      📧 siddiquizain169@gmail.com |
+      <a href="https://zain-dotcom.github.io/html-portfolio/" target="_blank">Portfolio</a> |
+      <a href="https://www.linkedin.com/in/shaheer-siddiqui-90b286226" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/zain-dotcom" target="_blank">GitHub</a></p>
+      <hr>
+      <h3>🎯 Career Objective</h3>
+      <p>Motivated and passionate aspiring Full Stack Web Developer and UI/UX Designer with a strong academic background in Mathematics. Seeking an opportunity to apply and grow technical skills in a dynamic environment. Eager to contribute to creative digital solutions and enhance user experience through clean and efficient code.</p>
+      <h3>🎓 Education</h3>
+      <p><strong>BSc in Mathematics</strong><br>Veer Bahadur Singh Purvanchal University<br>2021 – 2024 (Expected)</p>
+      <h3>💼 Skills</h3>
+      <ul>
+        <li>HTML5, CSS3, JavaScript (Basic), Responsive Design</li>
+        <li>Figma (Basics), Wireframing, Prototyping</li>
+        <li>Git & GitHub, VS Code</li>
+        <li>Teamwork, Time Management, Communication</li>
+      </ul>
+      <h3>🛠️ Projects</h3>
+      <ul>
+        <li><strong>To-Do List App:</strong> Simple task manager with localStorage. <a href="https://zain-dotcom.github.io/todo-app-shaheer/" target="_blank">Live Link</a></li>
+        <li><strong>Weather App:</strong> UI to search weather info using an API. [Demo]</li>
+        <li><strong>Portfolio Website:</strong> This personal portfolio. <a href="https://zain-dotcom.github.io/html-portfolio/" target="_blank">Live Link</a></li>
+      </ul>
     </div>
+  </section>
 
-    <div class="card scroll-fade">
-      <img src="https://via.placeholder.com/600x300" alt="Blog CMS">
-      <h3>Blog CMS</h3>
-      <p>A simple blog content system using MERN stack and modern UI.</p>
-      <a href="#" class="btn">View Project</a>
-    </div>
-  
-    </section>
-
-    <section class="contact fade-in">
-      <h2>📬 Contact Me</h2>
-      <p>If you’d like to connect or collaborate, feel free to reach out!</p>
-      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=siddiquizain169@gmail.com" class="btn" target="_blank">📧 Send Email</a>
-    </section>
-    
-
-  <script>
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-    }, { threshold: 0.1 });
-
-    document.querySelectorAll('.scroll-fade').forEach(el => {
-      observer.observe(el);
-    });
-  </script>
+  <section class="contact" id="contact">
+    <h2>📬 Contact Me</h2>
+    <p>If you’d like to connect or collaborate, feel free to reach out!</p>
+    <a href="mailto:siddiquizain169@gmail.com" class="email-btn">Send Email</a>
+  </section>
 </body>
 </html>
