@@ -8,39 +8,57 @@
 </head>
 <body>
   <header class="hero">
-    <img src="https://via.placeholder.com/150" alt="Shaheer's Photo" class="profile-pic"/>
-    <h1>Hello, I'm <span class="highlight">Shaheer</span></h1>
-    <p>Full Stack Web Developer & UI/UX Designer</p>
-    <div class="social-links">
-      <a href="https://zain-dotcom.github.io/html-portfolio/" target="_blank">🌐 GitHub</a>
-      <a href="https://www.linkedin.com/in/shaheer-siddiqui-90b286226" target="_blank">💼 LinkedIn</a>
-      <a href="mailto:siddiquizain169@gmail.com">📧 Email</a>
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <img src="zain.jpg" alt="Zain's Photo" class="profile-pic"/>
+      <h1>Hello, I'm <span class="highlight">Shaheer</span></h1>
+      <p>Full Stack Web Developer & UI/UX Designer</p>
+      <div class="social-links">
+        <a href="https://zain-dotcom.github.io/html-portfolio/" target="_blank">🌐 GitHub</a>
+        <a href="https://www.linkedin.com/in/shaheer-siddiqui-90b286226" target="_blank">💼 LinkedIn</a>
+        <a href="mailto:siddiquizain169@gmail.com">📧 siddiquizain169@gmail.com</a>
+      </div>
     </div>
   </header>
 
   <section class="projects">
     <h2>Projects</h2>
-    <div class="card">
+
+    <div class="card scroll-fade">
+      <img src="https://via.placeholder.com/600x300" alt="To-Do App">
       <h3>To-Do App</h3>
-      <p>A simple task manager built using JavaScript.</p>
-      <a href="#">View Project</a>
+      <p>A simple task manager built using JavaScript with add/delete features.</p>
+      <a href="#" class="btn">View Project</a>
     </div>
-    <div class="card">
+
+    <div class="card scroll-fade">
+      <img src="https://via.placeholder.com/600x300" alt="Weather App">
       <h3>Weather App</h3>
-      <p>Real-time weather data using OpenWeather API and React.</p>
-      <a href="#">View Project</a>
+      <p>Get real-time weather updates using OpenWeather API with clean UI.</p>
+      <a href="#" class="btn">View Project</a>
     </div>
-    <div class="card">
+
+    <div class="card scroll-fade">
+      <img src="https://via.placeholder.com/600x300" alt="Blog CMS">
       <h3>Blog CMS</h3>
-      <p>A content management system built with the MERN stack.</p>
-      <a href="#">View Project</a>
+      <p>A basic blog content system layout using MERN stack technologies.</p>
+      <a href="#" class="btn">View Project</a>
     </div>
   </section>
 
-  <section class="contact">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:siddiquizain169@gmail.com">siddiquizain169@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://https://www.linkedin.com/in/shaheer-siddiqui-90b286226" target="_blank">Shaheer Siddiqui</a></p>
-  </section>
+  <script>
+    // Scroll animation
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.scroll-fade').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
 </body>
 </html>
