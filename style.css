@@ -18,7 +18,7 @@ body { font-family: 'Poppins', sans-serif; margin: 0; padding: 0; background: #f
 
 .section-title { font-size: 2rem; margin-bottom: 2rem; }
 
-.card { background: white; padding: 1rem 1.5rem; margin: 1.5rem auto; border-radius: 10px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); max-width: 500px; width: 85%; text-align: left; opacity: 0; transform: translateY(40px); transition: all 0.8s ease-out; }
+.card { background: white; padding: 1rem 1.5rem; margin: 1.5rem auto; border-radius: 12px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); max-width: 500px; width: 90%; text-align: left; opacity: 0; transform: translateY(40px); transition: all 0.8s ease-out; }
 
 .card.visible { opacity: 1; transform: translateY(0); }
 
